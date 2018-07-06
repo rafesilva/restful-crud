@@ -1,0 +1,14 @@
+{
+  "name": "restful-crud",
+  "version": "1.0.0",
+  "description": "A Node.js Restful CRUD Api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael FS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
