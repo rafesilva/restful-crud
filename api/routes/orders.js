@@ -3,14 +3,25 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
 	res.status(200).json({
-		message: "Handling GET."
+		message: 'Order were fetched'
 	});
 });
 
 router.post('/', (req, res, next) => {
-	res.status(200).json({
-		message: "Handling POST."
+	const order = {
+		productId: req.body.productId,
+		quantity: req.body.quantity
+	};
+	res.status(201).json({
+		message: "Order was created",
+		order: order
 	});
 });
+
+router.get('/:orderId', (req, res, next) => {
+	res.status(200).json({
+
+	})
+})
 
 module.exports = router;
